@@ -1,0 +1,9 @@
+<h1><%= @post.subject %></h1>
+<%= flash[:message] %>
+<p>
+  <%= @post.subject %><br>
+  <%= @post.body %>
+</p>
+
+<p>Add Comment</p>
+<p><%= link_to "Main Forum", posts_path %></p>

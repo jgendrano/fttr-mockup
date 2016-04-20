@@ -1,0 +1,12 @@
+<h1>Forum</h1>
+<p>Click on each post to add and view comments.</p>
+
+ <ul>
+    <% @posts.each do |post| %>
+  <li>
+      <%= link_to post.subject, post_path(post) %><br>
+      <%= post.body %>
+  </li>
+    <% end %>
+</ul>
+<%= link_to "Create new Post", new_post_path %>
